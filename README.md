@@ -77,3 +77,7 @@ Each coupon is sweet, redeemable, and gives couples a playful way to stay connec
 ```bash
 # 1. Clone the project
 git clone https://github.com/shamak24/XOFlips.git
+```
+---
+<p align="center">Made with ❤️ by Soumil Shamak 😎</p>
+
