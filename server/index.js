@@ -1,10 +1,18 @@
 import express from 'express';
+import bodyParser from 'body-parser';
 import cors from 'cors';
+import dotenv from 'dotenv';
+import ConnectDBWithRetry from './models/db.js';
+import cookieParser from 'cookie-parser';
 
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
+ConnectDBWithRetry();
 
 app.use(cors());
+app.use(bodyParser.json());
+app.use(cookieParser());
+dotenv.config();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
